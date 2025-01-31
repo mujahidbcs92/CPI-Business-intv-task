@@ -64,3 +64,54 @@
 // });
 
 
+let slideIndex = 0;
+let slides, dots;
+
+document.addEventListener("DOMContentLoaded", () => {
+    slides = document.getElementsByClassName("mySlides");
+    dots = document.getElementsByClassName("dot");
+    showSlides();
+});
+
+function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].classList.add("active");
+
+    setTimeout(showSlides, 3000); // Change slide every 3 seconds
+}
+
+// Next & Previous Slide Functions
+function plusSlides(n) {
+    slideIndex += n;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+    if (slideIndex < 1) { slideIndex = slides.length; }
+    updateSlides();
+}
+
+// Set Slide Manually
+function currentSlide(n) {
+    slideIndex = n;
+    updateSlides();
+}
+
+// Update Slides & Dots
+function updateSlides() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].classList.add("active");
+}
