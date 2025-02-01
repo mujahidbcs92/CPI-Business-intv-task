@@ -1627,6 +1627,10 @@ footer {
         top: 48%;
     }
 
+    .highlights-box {
+         margin-top: 0%;
+     }
+
     .form-row {
         flex-direction: column;
     }
