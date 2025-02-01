@@ -1090,6 +1090,11 @@ footer {
 
     /*-------Head Section-------*/
 
+    .menu-icon {
+        width: 32px;
+        height: 20px;
+    }
+
     .hide-ele-sm {
         display: none !important;
     }
