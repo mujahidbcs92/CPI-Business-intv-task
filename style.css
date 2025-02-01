@@ -1394,7 +1394,7 @@ footer {
     }
 
 
-    /*---------Adenda-Section----------*/
+     /*---------Adenda-Section----------*/
 
     .agenda-section {
         padding-top: 10%;
@@ -1429,10 +1429,11 @@ footer {
 
     .entry {
         margin-left: 0px;
+        width: 100%;
     }
 
     .entry-nth {
-        margin-left: 3px;
+        margin-left: 0px;
     }
 
     .entry-nth:before {
@@ -1451,7 +1452,7 @@ footer {
         content: "";
         position: absolute;
         width: 1px;
-        height: 212px;
+        height: 195px;
         display: block;
         border-radius: 0px;
         border: 1px solid skyblue;
@@ -1482,7 +1483,7 @@ footer {
         font-size: 15px;
         margin-bottom: 0px;
         color: #fff;
-        line-height: 20px;
+        line-height: 18px;
     }
 
 
