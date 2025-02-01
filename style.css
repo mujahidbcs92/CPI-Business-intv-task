@@ -1583,7 +1583,8 @@ footer {
     .heading {
         display: block;
         margin: 0 auto;
-        padding-top: 56%;
+        padding-top: 65%;
+         width: 86%;
     }
 
     .subheading {
