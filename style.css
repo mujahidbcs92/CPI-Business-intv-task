@@ -1618,9 +1618,9 @@ footer {
 
     .overview-content .vec-p {
         position: absolute;
-        top: 45%;
+        top: 46%;
         z-index: 999;
-        padding: 20%;
+        padding: 17%;
         text-align: center;
         margin-right: 0%;
         line-height: 17px;
@@ -1631,7 +1631,7 @@ footer {
         left: 8%;
         opacity: 20%;
         width: 12%;
-        top: 48%;
+        top: 46%;
     }
 
     .highlights-box {
